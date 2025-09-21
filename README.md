@@ -1,5 +1,8 @@
 # MergeBench: A Benchmark for Merging Domain-Specialized LLMs
 
+This is the official repo of MergeBench in the paper ["MergeBench: A Benchmark for Merging Domain-Specialized LLMs"](https://arxiv.org/abs/2505.10833) at NeurIPS 2025 Datasets and Benchmarks Track.
+
+
 ![alt text](MergeBench.png "MergeBench")
 
 ## Abstract
@@ -55,4 +58,16 @@ export OPENAI_API_KEY=''
 To perform the full evaluation on all five task categories on the base `Llama-3.2-3B` model with GPU 0 and save the results in the folder `results/llama-3.2-3b`, run the following command:
 ```
 bash scripts/evaluate.sh meta-llama/Llama-3.2-3B 0 results/llama-3.2-3b
+```
+
+## Citation
+```
+@inproceedings{
+    he2025mergebench,
+    title={MergeBench: A Benchmark for Merging Domain-Specialized {LLM}s},
+    author={Yifei He and Siqi Zeng and Yuzheng Hu and Rui Yang and Tong Zhang and Han Zhao},
+    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2025},
+    url={https://openreview.net/forum?id=rw50iUoyLu}
+}
 ```
