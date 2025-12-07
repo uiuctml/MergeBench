@@ -12,7 +12,7 @@ from merging_methods.utils import *
 from merging_methods.merger import Merger
 
 import sys
-sys.path.append('/home/s2410407/jaist/fork/MergeBench/merging')
+sys.path.append('<YOUR PATH HERE>/MergeBench/merging')
 from .regmean_utils import *
 from taskloader import *
 
