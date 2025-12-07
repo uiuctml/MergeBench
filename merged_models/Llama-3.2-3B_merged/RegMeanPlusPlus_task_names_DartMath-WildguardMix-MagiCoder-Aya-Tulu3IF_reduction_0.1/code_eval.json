@@ -1,0 +1,51 @@
+{
+  "humanevalplus": {
+    "pass@1": 0.31036585365853653,
+    "pass@10": 0.4634146341463415
+  },
+  "mbppplus": {
+    "pass@1": 0.4304232804232804,
+    "pass@10": 0.5582010582010583
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 10,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "merged_models/Llama-3.2-3B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1",
+    "modeltype": "causal",
+    "peft_model": null,
+    "revision": null,
+    "use_auth_token": true,
+    "trust_remote_code": false,
+    "tasks": "humanevalplus,mbppplus",
+    "instruction_tokens": null,
+    "batch_size": 10,
+    "max_length_generation": 512,
+    "precision": "bf16",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "left_padding": false,
+    "limit": null,
+    "limit_start": 0,
+    "save_every_k_tasks": -1,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "merged_models/Llama-3.2-3B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1/results/code_eval.json",
+    "save_generations": false,
+    "load_generations_intermediate_paths": null,
+    "save_generations_path": "generations.json",
+    "save_references": false,
+    "save_references_path": "references.json",
+    "prompt": "prompt",
+    "max_memory_per_gpu": null,
+    "check_references": false
+  }
+}
