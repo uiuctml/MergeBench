@@ -22,6 +22,14 @@ def filter_modules_by_regex(base_module, include_patterns, include_type):
     return modules
 
 
+def send_inputs_to_device(inputs, device):
+    for k, v in inputs.items():
+        if isinstance(v, torch.Tensor): inputs[k] = v.to(device)  # for 'hidden_states', 'attention_mask', 'position_ids', 'cache_position', 'past_key_values'
+        elif isinstance(v, tuple): inputs[k] = tuple([vv.to(device) for vv in v])  # for 'position_embeddings'
+
+    return inputs
+
+
 def compute_grams(trainer, finetuned_model, train_dataloader):
     covs = {}
     xn = {}
@@ -43,7 +51,12 @@ def compute_grams(trainer, finetuned_model, train_dataloader):
 
         return hook
 
-    model = finetuned_model.to(trainer.args.device)
+    device = "cpu"
+    if trainer is not None:
+        device = trainer.args.device
+    elif torch.cuda.is_available():
+        device = "cuda:0"
+    model = finetuned_model.to(device)
     linear_modules = filter_modules_by_regex(
         model, None, [nn.Linear]
     )
@@ -52,16 +65,20 @@ def compute_grams(trainer, finetuned_model, train_dataloader):
         handle = module.register_forward_hook(get_grams(name))
         handles.append(handle)
 
-    n_step = 1000
-    total = n_step if n_step > 0 else len(train_dataloader)
-    for step, inputs in tqdm(
-        enumerate(train_dataloader), total=total, desc="Computing gram matrix"
+    total = len(train_dataloader)
+    for inputs in tqdm(
+        train_dataloader, total=total, desc="Computing gram matrix",
+        disable = type(train_dataloader) == list
     ):
-        if n_step > 0 and step == n_step:
-            break
-        
-        inputs = trainer._prepare_inputs(inputs)
-        outputs = model(inputs['input_ids'], inputs['attention_mask'])
+        if type(train_dataloader) == list:
+            # For RegMeanPlusPlus
+            inputs = send_inputs_to_device(inputs, device)
+            _ = model(**inputs)
+            inputs = send_inputs_to_device(inputs, "cpu")
+        else:
+            # For RegMean
+            inputs = trainer._prepare_inputs(inputs)
+            _ = model(**inputs)
 
     for handle in handles:
         handle.remove()

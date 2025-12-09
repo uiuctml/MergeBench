@@ -1,7 +1,9 @@
+import os
+
 from datasets import load_dataset
 from trl import SFTConfig, SFTTrainer
 
-cache_dir = '/data/huggingface'
+cache_dir = os.getenv('HF_HOME', '/data/huggingface')
 
 def formatting_prompts_func(examples, instruction_key='instruction', input_key='input', output_key='output'):
     # alpaca style prompts
@@ -62,16 +64,17 @@ class WildguardMix(TaskLoader):
                             optim="adamw_torch",
                             bf16=True,
                             dataset_num_proc=48,
-                            packing=True,
-                            max_seq_length=4096, # 4096
+                            packing=False,
+                            max_length=2048, # 4096
                             gradient_checkpointing=True,
                             per_device_train_batch_size=1,
-                            deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
-                            output_dir="/home/cindy2000_sh/MergeBench/tmp",
+                            # deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
+                            output_dir="./tmp",
                             save_strategy='no',
                         ) 
 
         self.training_dataset = load_dataset('MergeBench/safety_val',cache_dir=cache_dir)
+        self.training_dataset = self.training_dataset.rename_column("prompt", "query")
         
         if sample_size is None:
             self.training_dataset = self.training_dataset["train"]
@@ -81,7 +84,7 @@ class WildguardMix(TaskLoader):
                                   args=self.training_args,
                                   train_dataset=self.training_dataset,  
                                   formatting_func=lambda examples: formatting_prompts_func(
-                                    examples, instruction_key="prompt", output_key="response"
+                                    examples, instruction_key="query", output_key="response"
                                 ),
                             )
 
@@ -97,16 +100,16 @@ class MagiCoder(TaskLoader):
                             optim="adamw_torch",
                             bf16=True,
                             dataset_num_proc=48,
-                            packing=True,
-                            max_seq_length=4096, # 4096
+                            packing=False,
+                            max_length=2048, # 4096
                             gradient_checkpointing=True,
                             per_device_train_batch_size=1,
-                            deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
-                            output_dir="/home/cindy2000_sh/MergeBench/tmp",
+                            # deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
+                            output_dir="./tmp",
                             save_strategy='no',
                         ) 
 
-        self.training_dataset = load_dataset('MergeBench/code_val',cache_dir=cache_dir)
+        self.training_dataset = load_dataset('MergeBench/coding_val',cache_dir=cache_dir)
 
         if sample_size is None:
             self.training_dataset = self.training_dataset["train"]
@@ -133,12 +136,12 @@ class Aya(TaskLoader):
                             optim="adamw_torch",
                             bf16=True,
                             dataset_num_proc=48,
-                            packing=True,
-                            max_seq_length=256, 
+                            packing=False,
+                            max_length=2048, 
                             gradient_checkpointing=True,
                             per_device_train_batch_size=1,
-                            deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
-                            output_dir="/home/cindy2000_sh/MergeBench/tmp",
+                            # deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
+                            output_dir="./tmp",
                             save_strategy='no',
                         ) 
 
@@ -167,12 +170,12 @@ class DartMath(TaskLoader):
                             optim="adamw_torch",
                             bf16=True,
                             dataset_num_proc=48,
-                            packing=True,
-                            max_seq_length=4096, 
+                            packing=False,
+                            max_length=2048, 
                             gradient_checkpointing=True,
                             per_device_train_batch_size=1,
-                            deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
-                            output_dir="/home/cindy2000_sh/MergeBench/tmp",
+                            # deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
+                            output_dir="./tmp",
                             save_strategy='no',
                         ) 
 
@@ -201,16 +204,16 @@ class Tulu3IF(TaskLoader):
                             optim="adamw_torch",
                             bf16=True,
                             dataset_num_proc=48,
-                            packing=True,
-                            max_seq_length=1024, 
+                            packing=False,
+                            max_length=2048, 
                             gradient_checkpointing=True,
                             per_device_train_batch_size=1,
-                            deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
-                            output_dir="/home/cindy2000_sh/MergeBench/tmp",
+                            # deepspeed='/home/cindy2000_sh/MergeBench/deepspeed_configs/zero3.json',
+                            output_dir="./tmp",
                             save_strategy='no',
                         ) 
 
-        self.training_dataset = load_dataset('MergeBench/if_val',cache_dir=cache_dir)
+        self.training_dataset = load_dataset('MergeBench/instruction_val',cache_dir=cache_dir)
 
         if sample_size is None:
             self.training_dataset = self.training_dataset['train']

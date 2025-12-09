@@ -1,0 +1,1337 @@
+{
+  "results": {
+    "arc_de": {
+      "alias": "arc_de",
+      "acc,none": 0.3746792130025663,
+      "acc_stderr,none": 0.01416314857981058,
+      "acc_norm,none": 0.41317365269461076,
+      "acc_norm_stderr,none": 0.01440786699505746
+    },
+    "arc_es": {
+      "alias": "arc_es",
+      "acc,none": 0.43504273504273505,
+      "acc_stderr,none": 0.014499949963905008,
+      "acc_norm,none": 0.4478632478632479,
+      "acc_norm_stderr,none": 0.01454416474185364
+    },
+    "arc_fr": {
+      "alias": "arc_fr",
+      "acc,none": 0.43199315654405473,
+      "acc_stderr,none": 0.014494184864971343,
+      "acc_norm,none": 0.4473909324208725,
+      "acc_norm_stderr,none": 0.014548933904137591
+    },
+    "arc_ru": {
+      "alias": "arc_ru",
+      "acc,none": 0.3652694610778443,
+      "acc_stderr,none": 0.014088993137853638,
+      "acc_norm,none": 0.41146278870829767,
+      "acc_norm_stderr,none": 0.014398950037131911
+    },
+    "gsm8k_cot": {
+      "alias": "gsm8k_cot",
+      "exact_match,strict-match": 0.6580742987111448,
+      "exact_match_stderr,strict-match": 0.013066089625182818,
+      "exact_match,flexible-extract": 0.733131159969674,
+      "exact_match_stderr,flexible-extract": 0.012183780551887959
+    },
+    "hellaswag_de": {
+      "alias": "hellaswag_de",
+      "acc,none": 0.48484201537147736,
+      "acc_stderr,none": 0.005163807946876662,
+      "acc_norm,none": 0.6253202391118702,
+      "acc_norm_stderr,none": 0.005001279196555146
+    },
+    "hellaswag_es": {
+      "alias": "hellaswag_es",
+      "acc,none": 0.5306165991039045,
+      "acc_stderr,none": 0.005154837402482832,
+      "acc_norm,none": 0.6901002773629187,
+      "acc_norm_stderr,none": 0.004776693619654075
+    },
+    "hellaswag_fr": {
+      "alias": "hellaswag_fr",
+      "acc,none": 0.5197044334975369,
+      "acc_stderr,none": 0.005170455686499735,
+      "acc_norm,none": 0.6726279717284215,
+      "acc_norm_stderr,none": 0.0048562894826775825
+    },
+    "hellaswag_ru": {
+      "alias": "hellaswag_ru",
+      "acc,none": 0.47249784296807595,
+      "acc_stderr,none": 0.005184999806361907,
+      "acc_norm,none": 0.6024590163934426,
+      "acc_norm_stderr,none": 0.005082664197928633
+    },
+    "hendrycks_math": {
+      "exact_match,none": 0.0022,
+      "exact_match_stderr,none": 0.0006628553260613068,
+      "alias": "hendrycks_math"
+    },
+    "hendrycks_math_algebra": {
+      "alias": " - hendrycks_math_algebra",
+      "exact_match,none": 0.003369839932603201,
+      "exact_match_stderr,none": 0.0016827876052283514
+    },
+    "hendrycks_math_counting_and_prob": {
+      "alias": " - hendrycks_math_counting_and_prob",
+      "exact_match,none": 0.002109704641350211,
+      "exact_match_stderr,none": 0.0021097046413502104
+    },
+    "hendrycks_math_geometry": {
+      "alias": " - hendrycks_math_geometry",
+      "exact_match,none": 0.0020876826722338203,
+      "exact_match_stderr,none": 0.0020876826722338216
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "alias": " - hendrycks_math_intermediate_algebra",
+      "exact_match,none": 0.0011074197120708748,
+      "exact_match_stderr,none": 0.0011074197120708852
+    },
+    "hendrycks_math_num_theory": {
+      "alias": " - hendrycks_math_num_theory",
+      "exact_match,none": 0.0,
+      "exact_match_stderr,none": 0.0
+    },
+    "hendrycks_math_prealgebra": {
+      "alias": " - hendrycks_math_prealgebra",
+      "exact_match,none": 0.003444316877152698,
+      "exact_match_stderr,none": 0.0019862902400464752
+    },
+    "hendrycks_math_precalc": {
+      "alias": " - hendrycks_math_precalc",
+      "exact_match,none": 0.0018315018315018315,
+      "exact_match_stderr,none": 0.0018315018315018376
+    },
+    "ifeval": {
+      "alias": "ifeval",
+      "prompt_level_strict_acc,none": 0.11090573012939002,
+      "prompt_level_strict_acc_stderr,none": 0.013513069747049506,
+      "inst_level_strict_acc,none": 0.19184652278177458,
+      "inst_level_strict_acc_stderr,none": "N/A",
+      "prompt_level_loose_acc,none": 0.133086876155268,
+      "prompt_level_loose_acc_stderr,none": 0.014617009342904507,
+      "inst_level_loose_acc,none": 0.22182254196642687,
+      "inst_level_loose_acc_stderr,none": "N/A"
+    },
+    "m_mmlu_de": {
+      "alias": "m_mmlu_de",
+      "acc,none": 0.5123698898778096,
+      "acc_stderr,none": 0.0043412463290572224
+    },
+    "m_mmlu_es": {
+      "alias": "m_mmlu_es",
+      "acc,none": 0.5345732713364332,
+      "acc_stderr,none": 0.00431981691610148
+    },
+    "m_mmlu_fr": {
+      "alias": "m_mmlu_fr",
+      "acc,none": 0.5292949354518371,
+      "acc_stderr,none": 0.00436268123167117
+    },
+    "m_mmlu_ru": {
+      "alias": "m_mmlu_ru",
+      "acc,none": 0.4891212424079342,
+      "acc_stderr,none": 0.00438324059821865
+    }
+  },
+  "groups": {
+    "hendrycks_math": {
+      "exact_match,none": 0.0022,
+      "exact_match_stderr,none": 0.0006628553260613068,
+      "alias": "hendrycks_math"
+    }
+  },
+  "group_subtasks": {
+    "arc_de": [],
+    "arc_es": [],
+    "arc_fr": [],
+    "arc_ru": [],
+    "gsm8k_cot": [],
+    "hellaswag_de": [],
+    "hellaswag_es": [],
+    "hellaswag_fr": [],
+    "hellaswag_ru": [],
+    "hendrycks_math": [
+      "hendrycks_math_algebra",
+      "hendrycks_math_counting_and_prob",
+      "hendrycks_math_geometry",
+      "hendrycks_math_intermediate_algebra",
+      "hendrycks_math_num_theory",
+      "hendrycks_math_prealgebra",
+      "hendrycks_math_precalc"
+    ],
+    "ifeval": [],
+    "m_mmlu_de": [],
+    "m_mmlu_es": [],
+    "m_mmlu_fr": [],
+    "m_mmlu_ru": []
+  },
+  "configs": {
+    "arc_de": {
+      "task": "arc_de",
+      "tag": [
+        "arc_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_arc",
+      "dataset_name": "de",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        # breakpoint()\n        out_doc = {\n            \"id\": doc[\"id\"],\n            \"query\": \"Question: \" + preprocess(doc[\"instruction\"]) + \"\\nAnswer:\",\n            \"choices\": [\n                preprocess(option)\n                for option in [\n                    doc[\"option_a\"],\n                    doc[\"option_b\"],\n                    doc[\"option_c\"],\n                    doc[\"option_d\"],\n                    doc[\"option_e\"],\n                ]\n                if option\n            ],\n            \"gold\": [\"A\", \"B\", \"C\", \"D\", \"E\"].index(doc[\"answer\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "query",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "arc_es": {
+      "task": "arc_es",
+      "tag": [
+        "arc_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_arc",
+      "dataset_name": "es",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        # breakpoint()\n        out_doc = {\n            \"id\": doc[\"id\"],\n            \"query\": \"Question: \" + preprocess(doc[\"instruction\"]) + \"\\nAnswer:\",\n            \"choices\": [\n                preprocess(option)\n                for option in [\n                    doc[\"option_a\"],\n                    doc[\"option_b\"],\n                    doc[\"option_c\"],\n                    doc[\"option_d\"],\n                    doc[\"option_e\"],\n                ]\n                if option\n            ],\n            \"gold\": [\"A\", \"B\", \"C\", \"D\", \"E\"].index(doc[\"answer\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "query",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "arc_fr": {
+      "task": "arc_fr",
+      "tag": [
+        "arc_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_arc",
+      "dataset_name": "fr",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        # breakpoint()\n        out_doc = {\n            \"id\": doc[\"id\"],\n            \"query\": \"Question: \" + preprocess(doc[\"instruction\"]) + \"\\nAnswer:\",\n            \"choices\": [\n                preprocess(option)\n                for option in [\n                    doc[\"option_a\"],\n                    doc[\"option_b\"],\n                    doc[\"option_c\"],\n                    doc[\"option_d\"],\n                    doc[\"option_e\"],\n                ]\n                if option\n            ],\n            \"gold\": [\"A\", \"B\", \"C\", \"D\", \"E\"].index(doc[\"answer\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "query",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "arc_ru": {
+      "task": "arc_ru",
+      "tag": [
+        "arc_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_arc",
+      "dataset_name": "ru",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        # breakpoint()\n        out_doc = {\n            \"id\": doc[\"id\"],\n            \"query\": \"Question: \" + preprocess(doc[\"instruction\"]) + \"\\nAnswer:\",\n            \"choices\": [\n                preprocess(option)\n                for option in [\n                    doc[\"option_a\"],\n                    doc[\"option_b\"],\n                    doc[\"option_c\"],\n                    doc[\"option_d\"],\n                    doc[\"option_e\"],\n                ]\n                if option\n            ],\n            \"gold\": [\"A\", \"B\", \"C\", \"D\", \"E\"].index(doc[\"answer\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "gold",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "query",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "gsm8k_cot": {
+      "task": "gsm8k_cot",
+      "tag": [
+        "chain_of_thought"
+      ],
+      "dataset_path": "gsm8k",
+      "dataset_name": "main",
+      "test_split": "test",
+      "doc_to_text": "Q: {{question}}\nA:",
+      "doc_to_target": "{{answer.split('####')[-1].strip() if answer is defined else target}}",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": [
+          {
+            "question": "There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?",
+            "target": "There are 15 trees originally. Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6. The answer is 6."
+          },
+          {
+            "question": "If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?",
+            "target": "There are originally 3 cars. 2 more cars arrive. 3 + 2 = 5. The answer is 5."
+          },
+          {
+            "question": "Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?",
+            "target": "Originally, Leah had 32 chocolates. Her sister had 42. So in total they had 32 + 42 = 74. After eating 35, they had 74 - 35 = 39. The answer is 39."
+          },
+          {
+            "question": "Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?",
+            "target": "Jason started with 20 lollipops. Then he had 12 after giving some to Denny. So he gave Denny 20 - 12 = 8. The answer is 8."
+          },
+          {
+            "question": "Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?",
+            "target": "Shawn started with 5 toys. If he got 2 toys each from his mom and dad, then that is 4 more toys. 5 + 4 = 9. The answer is 9."
+          },
+          {
+            "question": "There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?",
+            "target": "There were originally 9 computers. For each of 4 days, 5 more computers were added. So 5 * 4 = 20 computers were added. 9 + 20 is 29. The answer is 29."
+          },
+          {
+            "question": "Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?",
+            "target": "Michael started with 58 golf balls. After losing 23 on tuesday, he had 58 - 23 = 35. After losing 2 more, he had 35 - 2 = 33 golf balls. The answer is 33."
+          },
+          {
+            "question": "Olivia has $23. She bought five bagels for $3 each. How much money does she have left?",
+            "target": "Olivia had 23 dollars. 5 bagels for 3 dollars each will be 5 x 3 = 15 dollars. So she has 23 - 15 dollars left. 23 - 15 is 8. The answer is 8."
+          }
+        ]
+      },
+      "num_fewshot": 8,
+      "metric_list": [
+        {
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": false,
+          "metric": "exact_match",
+          "regexes_to_ignore": [
+            ",",
+            "\\$",
+            "(?s).*#### ",
+            "\\.$"
+          ]
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "do_sample": false,
+        "until": [
+          "Q:",
+          "</s>",
+          "<|im_end|>"
+        ]
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "The answer is (\\-?[0-9\\.\\,]+)."
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "strict-match"
+        },
+        {
+          "filter": [
+            {
+              "function": "regex",
+              "group_select": -1,
+              "regex_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+            },
+            {
+              "function": "take_first"
+            }
+          ],
+          "name": "flexible-extract"
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 3.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hellaswag_de": {
+      "task": "hellaswag_de",
+      "tag": [
+        "hellaswag_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_hellaswag",
+      "dataset_name": "de",
+      "validation_split": "val",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "{{label.lstrip()}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hellaswag_es": {
+      "task": "hellaswag_es",
+      "tag": [
+        "hellaswag_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_hellaswag",
+      "dataset_name": "es",
+      "validation_split": "val",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "{{label.lstrip()}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hellaswag_fr": {
+      "task": "hellaswag_fr",
+      "tag": [
+        "hellaswag_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_hellaswag",
+      "dataset_name": "fr",
+      "validation_split": "val",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "{{label.lstrip()}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hellaswag_ru": {
+      "task": "hellaswag_ru",
+      "tag": [
+        "hellaswag_multilingual"
+      ],
+      "dataset_path": "alexandrainst/m_hellaswag",
+      "dataset_name": "ru",
+      "validation_split": "val",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "query",
+      "doc_to_target": "{{label.lstrip()}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_algebra": {
+      "task": "hendrycks_math_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "algebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_counting_and_prob": {
+      "task": "hendrycks_math_counting_and_prob",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "counting_and_probability",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_geometry": {
+      "task": "hendrycks_math_geometry",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "geometry",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "task": "hendrycks_math_intermediate_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "intermediate_algebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_num_theory": {
+      "task": "hendrycks_math_num_theory",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "number_theory",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_prealgebra": {
+      "task": "hendrycks_math_prealgebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "prealgebra",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "hendrycks_math_precalc": {
+      "task": "hendrycks_math_precalc",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "precalculus",
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": remove_boxed(last_boxed_only_string(doc[\"solution\"])),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Problem: {{problem}}\nAnswer:",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    retval = 0\n    indices = [pos for pos, char in enumerate(results[0]) if char == \"$\"]\n    if len(indices) <= 1:\n        answer = results[0]\n    else:\n        answer = results[0][indices[0] + 1 : indices[-1]]\n\n    if is_equiv(answer, remove_boxed(last_boxed_only_string(doc[\"solution\"]))):\n        retval = 1\n\n    results = {\n        \"exact_match\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "ifeval": {
+      "task": "ifeval",
+      "dataset_path": "google/IFEval",
+      "test_split": "train",
+      "doc_to_text": "prompt",
+      "doc_to_target": 0,
+      "unsafe_code": false,
+      "process_results": "def process_results(doc, results):\n    inp = InputExample(\n        key=doc[\"key\"],\n        instruction_id_list=doc[\"instruction_id_list\"],\n        prompt=doc[\"prompt\"],\n        kwargs=doc[\"kwargs\"],\n    )\n    response = results[0]\n\n    out_strict = test_instruction_following_strict(inp, response)\n    out_loose = test_instruction_following_loose(inp, response)\n\n    return {\n        \"prompt_level_strict_acc\": out_strict.follow_all_instructions,\n        \"inst_level_strict_acc\": out_strict.follow_instruction_list,\n        \"prompt_level_loose_acc\": out_loose.follow_all_instructions,\n        \"inst_level_loose_acc\": out_loose.follow_instruction_list,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "prompt_level_strict_acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "inst_level_strict_acc",
+          "aggregation": "def agg_inst_level_acc(items):\n    flat_items = [item for sublist in items for item in sublist]\n    inst_level_acc = sum(flat_items) / len(flat_items)\n    return inst_level_acc\n",
+          "higher_is_better": true
+        },
+        {
+          "metric": "prompt_level_loose_acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "inst_level_loose_acc",
+          "aggregation": "def agg_inst_level_acc(items):\n    flat_items = [item for sublist in items for item in sublist]\n    inst_level_acc = sum(flat_items) / len(flat_items)\n    return inst_level_acc\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [],
+        "do_sample": false,
+        "temperature": 0.0,
+        "max_gen_toks": 1280
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 4.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "m_mmlu_de": {
+      "task": "m_mmlu_de",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "de",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "m_mmlu_es": {
+      "task": "m_mmlu_es",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "es",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "m_mmlu_fr": {
+      "task": "m_mmlu_fr",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "fr",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    },
+    "m_mmlu_ru": {
+      "task": "m_mmlu_ru",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "ru",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0,
+        "pretrained": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1"
+      }
+    }
+  },
+  "versions": {
+    "arc_de": 2.0,
+    "arc_es": 2.0,
+    "arc_fr": 2.0,
+    "arc_ru": 2.0,
+    "gsm8k_cot": 3.0,
+    "hellaswag_de": 1.0,
+    "hellaswag_es": 1.0,
+    "hellaswag_fr": 1.0,
+    "hellaswag_ru": 1.0,
+    "hendrycks_math": 1.0,
+    "hendrycks_math_algebra": 1.0,
+    "hendrycks_math_counting_and_prob": 1.0,
+    "hendrycks_math_geometry": 1.0,
+    "hendrycks_math_intermediate_algebra": 1.0,
+    "hendrycks_math_num_theory": 1.0,
+    "hendrycks_math_prealgebra": 1.0,
+    "hendrycks_math_precalc": 1.0,
+    "ifeval": 4.0,
+    "m_mmlu_de": 0.0,
+    "m_mmlu_es": 0.0,
+    "m_mmlu_fr": 0.0,
+    "m_mmlu_ru": 0.0
+  },
+  "n-shot": {
+    "arc_de": 0,
+    "arc_es": 0,
+    "arc_fr": 0,
+    "arc_ru": 0,
+    "gsm8k_cot": 8,
+    "hellaswag_de": 0,
+    "hellaswag_es": 0,
+    "hellaswag_fr": 0,
+    "hellaswag_ru": 0,
+    "hendrycks_math_algebra": 0,
+    "hendrycks_math_counting_and_prob": 0,
+    "hendrycks_math_geometry": 0,
+    "hendrycks_math_intermediate_algebra": 0,
+    "hendrycks_math_num_theory": 0,
+    "hendrycks_math_prealgebra": 0,
+    "hendrycks_math_precalc": 0,
+    "ifeval": 0,
+    "m_mmlu_de": 0,
+    "m_mmlu_es": 0,
+    "m_mmlu_fr": 0,
+    "m_mmlu_ru": 0
+  },
+  "higher_is_better": {
+    "arc_de": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_es": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_fr": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_ru": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gsm8k_cot": {
+      "exact_match": true
+    },
+    "hellaswag_de": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "hellaswag_es": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "hellaswag_fr": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "hellaswag_ru": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "hendrycks_math": {
+      "exact_match": true
+    },
+    "hendrycks_math_algebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_counting_and_prob": {
+      "exact_match": true
+    },
+    "hendrycks_math_geometry": {
+      "exact_match": true
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_num_theory": {
+      "exact_match": true
+    },
+    "hendrycks_math_prealgebra": {
+      "exact_match": true
+    },
+    "hendrycks_math_precalc": {
+      "exact_match": true
+    },
+    "ifeval": {
+      "prompt_level_strict_acc": true,
+      "inst_level_strict_acc": true,
+      "prompt_level_loose_acc": true,
+      "inst_level_loose_acc": true
+    },
+    "m_mmlu_de": {
+      "acc": true
+    },
+    "m_mmlu_es": {
+      "acc": true
+    },
+    "m_mmlu_fr": {
+      "acc": true
+    },
+    "m_mmlu_ru": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "m_mmlu_ru": {
+      "original": 13007,
+      "effective": 13007
+    },
+    "m_mmlu_fr": {
+      "original": 13091,
+      "effective": 13091
+    },
+    "m_mmlu_es": {
+      "original": 13334,
+      "effective": 13334
+    },
+    "m_mmlu_de": {
+      "original": 13258,
+      "effective": 13258
+    },
+    "ifeval": {
+      "original": 541,
+      "effective": 541
+    },
+    "hendrycks_math_algebra": {
+      "original": 1187,
+      "effective": 1187
+    },
+    "hendrycks_math_counting_and_prob": {
+      "original": 474,
+      "effective": 474
+    },
+    "hendrycks_math_geometry": {
+      "original": 479,
+      "effective": 479
+    },
+    "hendrycks_math_intermediate_algebra": {
+      "original": 903,
+      "effective": 903
+    },
+    "hendrycks_math_num_theory": {
+      "original": 540,
+      "effective": 540
+    },
+    "hendrycks_math_prealgebra": {
+      "original": 871,
+      "effective": 871
+    },
+    "hendrycks_math_precalc": {
+      "original": 546,
+      "effective": 546
+    },
+    "hellaswag_ru": {
+      "original": 9272,
+      "effective": 9272
+    },
+    "hellaswag_fr": {
+      "original": 9338,
+      "effective": 9338
+    },
+    "hellaswag_es": {
+      "original": 9374,
+      "effective": 9374
+    },
+    "hellaswag_de": {
+      "original": 9368,
+      "effective": 9368
+    },
+    "gsm8k_cot": {
+      "original": 1319,
+      "effective": 1319
+    },
+    "arc_ru": {
+      "original": 1169,
+      "effective": 1169
+    },
+    "arc_fr": {
+      "original": 1169,
+      "effective": 1169
+    },
+    "arc_es": {
+      "original": 1170,
+      "effective": 1170
+    },
+    "arc_de": {
+      "original": 1169,
+      "effective": 1169
+    }
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "pretrained=merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1",
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "f91dd3c",
+  "date": 1763373562.252434,
+  "pretty_env_info": "PyTorch version: 2.8.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 20.04.3 LTS (x86_64)\nGCC version: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0\nClang version: Could not collect\nCMake version: version 3.16.3\nLibc version: glibc-2.31\n\nPython version: 3.10.9 (main, Mar  8 2023, 10:47:38) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-5.15.0-69-generic-x86_64-with-glibc2.31\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA A40\nNvidia driver version: 570.133.20\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nByte Order:                      Little Endian\nAddress sizes:                   46 bits physical, 57 bits virtual\nCPU(s):                          52\nOn-line CPU(s) list:             0-51\nThread(s) per core:              1\nCore(s) per socket:              26\nSocket(s):                       2\nNUMA node(s):                    4\nVendor ID:                       GenuineIntel\nCPU family:                      6\nModel:                           106\nModel name:                      Intel(R) Xeon(R) Gold 5320 CPU @ 2.20GHz\nStepping:                        6\nCPU MHz:                         814.783\nCPU max MHz:                     3400.0000\nCPU min MHz:                     800.0000\nBogoMIPS:                        4400.00\nL1d cache:                       2.4 MiB\nL1i cache:                       1.6 MiB\nL2 cache:                        65 MiB\nL3 cache:                        78 MiB\nNUMA node0 CPU(s):               0,4,8,12,16,20,24,28,32,36,40,44,48\nNUMA node1 CPU(s):               2,6,10,14,18,22,26,30,34,38,42,46,50\nNUMA node2 CPU(s):               1,5,9,13,17,21,25,29,33,37,41,45,49\nNUMA node3 CPU(s):               3,7,11,15,19,23,27,31,35,39,43,47,51\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Retbleed:          Not affected\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities\n\nVersions of relevant libraries:\n[pip3] numpy==2.2.6\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.10.2.21\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.27.3\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.8.0\n[pip3] torchaudio==2.8.0\n[pip3] torchvision==0.23.0\n[pip3] triton==3.4.0\n[conda] numpy                                2.2.6            pypi_0           pypi\n[conda] nvidia-cublas-cu12                   12.8.4.1         pypi_0           pypi\n[conda] nvidia-cuda-cupti-cu12               12.8.90          pypi_0           pypi\n[conda] nvidia-cuda-nvrtc-cu12               12.8.93          pypi_0           pypi\n[conda] nvidia-cuda-runtime-cu12             12.8.90          pypi_0           pypi\n[conda] nvidia-cudnn-cu12                    9.10.2.21        pypi_0           pypi\n[conda] nvidia-cufft-cu12                    11.3.3.83        pypi_0           pypi\n[conda] nvidia-curand-cu12                   10.3.9.90        pypi_0           pypi\n[conda] nvidia-cusolver-cu12                 11.7.3.90        pypi_0           pypi\n[conda] nvidia-cusparse-cu12                 12.5.8.93        pypi_0           pypi\n[conda] nvidia-cusparselt-cu12               0.7.1            pypi_0           pypi\n[conda] nvidia-nccl-cu12                     2.27.3           pypi_0           pypi\n[conda] nvidia-nvjitlink-cu12                12.8.93          pypi_0           pypi\n[conda] nvidia-nvtx-cu12                     12.8.90          pypi_0           pypi\n[conda] torch                                2.8.0            pypi_0           pypi\n[conda] torchaudio                           2.8.0            pypi_0           pypi\n[conda] torchvision                          0.23.0           pypi_0           pypi\n[conda] triton                               3.4.0            pypi_0           pypi",
+  "transformers_version": "4.57.1",
+  "lm_eval_version": "0.4.9.1",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|end_of_text|>",
+    "128001"
+  ],
+  "tokenizer_eos_token": [
+    "<|end_of_text|>",
+    "128001"
+  ],
+  "tokenizer_bos_token": [
+    "<|begin_of_text|>",
+    "128000"
+  ],
+  "eot_token_id": 128001,
+  "max_length": 131072,
+  "task_hashes": {},
+  "model_source": "vllm",
+  "model_name": "merged_models/Llama-3.1-8B_merged/RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1",
+  "model_name_sanitized": "merged_models__Llama-3.1-8B_merged__RegMeanPlusPlus_task_names_DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF_reduction_0.1",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 15748933.200144514,
+  "end_time": 15757932.640946288,
+  "total_evaluation_time_seconds": "8999.44080177322"
+}

@@ -10,7 +10,7 @@ def parse_args():
     parser = create_parser()
 
     parser.add_argument('--base-model', default='meta-llama/Llama-3.2-3B', type=str)
-    parser.add_argument('--algo', default='TaskArithmetic', type=str, choices=['TaskArithmetic', 'TIES', 'DARE', 'LocalizeAndStitch', 'Consensus', 'RegMean', 'Fisher'])
+    parser.add_argument('--algo', default='TaskArithmetic', type=str, choices=['TaskArithmetic', 'TIES', 'DARE', 'LocalizeAndStitch', 'Consensus', 'RegMean', 'RegMeanPlusPlus', 'Fisher'])
     parser.add_argument('--save-path', default='./merged_models/', type=str)
 
     return parser.parse_args()

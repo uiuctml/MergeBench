@@ -28,7 +28,7 @@ def create_parser():
     _parser.add_argument('--k', default=2, type=int)
     _parser.add_argument('--lamda', default=0.5, type=float)
 
-    # RegMean
+    # RegMean and RegMeanPlusPlus
     _parser.add_argument('--task_names', type=str)
     _parser.add_argument('--reduction', type=float)
 
@@ -65,7 +65,7 @@ def prepare_args(params):
         kwargs['scaling_coef'] = params.scaling_coef
         kwargs['k'] = params.k
         kwargs['lamda'] = params.lamda
-    elif params.algo == 'RegMean':
+    elif params.algo == 'RegMean' or params.algo == 'RegMeanPlusPlus':
         kwargs['task_names'] = params.task_names
         kwargs['reduction'] = params.reduction
     elif params.algo == 'Fisher':

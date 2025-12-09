@@ -29,6 +29,9 @@ python ./merging/main.py \
 # RegMean
 python ./merging/main.py --algo RegMean --base-model meta-llama/Llama-3.2-3B --task_names DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF --reduction 0.5
 
+# RegMeanPlusPlus
+python ./merging/main.py --algo RegMeanPlusPlus --base-model meta-llama/Llama-3.2-3B --task_names DartMath-WildguardMix-MagiCoder-Aya-Tulu3IF --reduction 0.1
+
 # TIES Merging
 python ./merging/main.py --algo TIES --base-model meta-llama/Llama-3.2-3B --K 0.3 --scaling-coef 0.4
 
