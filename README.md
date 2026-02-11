@@ -1,5 +1,19 @@
 # MergeBench: A Benchmark for Merging Domain-Specialized LLMs
 
+<p align="center">
+  <a href="https://yifei-he.github.io/mergebench/">
+    <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=google-chrome&logoColor=white" alt="Project Website"></a>
+  &nbsp;
+  <a href="https://arxiv.org/abs/2505.10833">
+    <img src="https://img.shields.io/badge/arXiv-Paper-red?style=flat-square&logo=arxiv" alt="arXiv Paper"></a>
+  &nbsp;
+  <a href="https://github.com/uiuctml/MergeBench">
+    <img src="https://img.shields.io/badge/GitHub-Project-181717?style=flat-square&logo=github" alt="GitHub Project"></a>
+  &nbsp;
+  <a href="https://huggingface.co/MergeBench">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-FFD21E?style=flat-square&logo=huggingface" alt="HF Models"></a>
+</p>
+
 This is the official repo of MergeBench in the paper ["MergeBench: A Benchmark for Merging Domain-Specialized LLMs"](https://arxiv.org/abs/2505.10833) at NeurIPS 2025 Datasets and Benchmarks Track.
 
 

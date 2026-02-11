@@ -1,0 +1,86 @@
+base_model: meta-llama/Llama-3.1-8B
+model_type: AutoModelForCausalLM
+tokenizer_type: AutoTokenizer
+
+load_in_8bit: false
+load_in_4bit: false
+strict: false
+
+datasets:
+  - path: ise-uiuc/Magicoder-Evol-Instruct-110K
+    conversation: gemma
+    type: gpteacher
+    split: "train"
+    train_on_split: "train"
+
+# warmup_steps: 40
+val_set_size: 0.0
+output_dir: models/llama-3.1-8b_Magicoder-Evol-Instruct-110K_2epoch
+wandb_project: 
+wandb_entity: 
+wandb_watch:
+wandb_name:
+#_response_only
+wandb_log_model:
+
+train_on_inputs: false
+
+save_safetensors: true
+#noisy_embedding_alpha: 10.0 # default for sharegpt type
+dataset_prepared_path: 
+
+
+dataset_processes: 48
+#torch_compile: true
+sequence_len: 2048
+sample_packing: true
+pad_to_sequence_len: true
+
+trust_remote_code: True
+adapter:
+lora_model_dir:
+
+
+
+
+gradient_checkpointing: false
+
+warmup_ratio: 0.1
+gradient_accumulation_steps: 20
+micro_batch_size: 1 #2
+num_epochs: 2
+optimizer: adamw_torch_fused
+lr_scheduler: cosine
+learning_rate: 2.e-5
+
+weight_decay: 0.0
+max_grad_norm: 1.0
+
+
+group_by_length: false
+bf16: auto
+fp16: false
+tf32: true
+
+early_stopping_patience:
+local_rank:
+logging_steps: 1
+xformers_attention:
+flash_attention: true
+
+
+eval_steps:
+eval_table_size:
+eval_table_max_new_tokens:
+#save_steps: 100
+save_strategy: "epoch"
+save_total_limit: 1
+debug:
+
+
+ddp: #true
+deepspeed: #deepspeed/zero1.json # multi-gpu only
+
+fsdp:
+fsdp_config:
+special_tokens:
