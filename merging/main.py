@@ -1,10 +1,6 @@
 from prepare_args import prepare_args, create_parser
+from taskloader import get_ft_ckpts
 import importlib
-
-def get_ft_ckpts(base_model):
-    model_name = base_model.split('/')[-1]
-    task_names = ['instruction', 'math', 'coding', 'safety', 'multilingual']
-    return [f'MergeBench/{model_name}_{task_name}' for task_name in task_names]
 
 def parse_args():
     parser = create_parser()
@@ -18,7 +14,8 @@ def parse_args():
 def main(args):
     kwargs = prepare_args(args)
     merger_module = importlib.import_module("merging_methods")
-    ft_ckpts = get_ft_ckpts(args.base_model)
+    task_names = args.task_names.split('-') if args.task_names else None
+    ft_ckpts = get_ft_ckpts(args.base_model, task_names)
 
     kwargs_str = "_".join(f"{key}_{value}" for key, value in kwargs.items() if key not in ['fisher_only','merge_only','save_group','task_names','keep_checkpoints'])
     if args.save_group:
